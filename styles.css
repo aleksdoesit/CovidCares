@@ -1,3 +1,123 @@
-h1 {
-  background-color: red;
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #25283a;
+}
+
+.mainNav,
+.socialNav {
+  display: flex;
+}
+
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  padding: 0 8px;
+  color: #aaabaf;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #3cc88f;
+}
+
+p {
+  margin: 0;
+  color: #aaabaf;
+}
+
+.landingHeader {
+  height: 90vh;
+}
+
+.landingHeader::after {
+  content: "";
+  background-image: url('./assets/healthcare\ workers.jpg');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+.landingHeader::before {
+  content: "";
+  background: #3cc88f;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  height: 90vh;
+}
+
+.makeshiftLogo,
+.logoWrapper {
+  display: flex;
+}
+
+.makeshiftLogo {
+  padding: 120px 0 0 120px;
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+
+.makeshiftLogo > div > h2 {
+  position: absolute;
+  left: 200px;
+}
+
+h2 {
+  margin: 0;
+  color: #25283a;
+  font-size: 50px;
+}
+
+.logoWrapper > i {
+  color: #3cc88f;
+  font-size: 40px;
+}
+
+.callToAction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.callToAction > h1, h3, button {
+  color: #fff;
+}
+
+.callToAction > h1 {
+  font-size: 60px;
+  margin: 30px 0;
+
+}
+
+button {
+  border-radius: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #3cc88f;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #25283a;
 }
