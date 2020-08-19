@@ -3,15 +3,22 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
 nav {
   display: flex;
   justify-content: space-evenly;
   background-color: #25283a;
+  height: 60px;
 }
 
 .mainNav,
 .socialNav {
   display: flex;
+  align-items: center;
 }
 
 ul,
@@ -27,13 +34,14 @@ a:hover {
   color: #3cc88f;
 }
 
-p {
+.socialNav > p {
   margin: 0;
   color: #aaabaf;
+  font-weight: bold;
 }
 
 .landingHeader {
-  height: 90vh;
+  height: 80vh;
 }
 
 .landingHeader::after {
@@ -48,7 +56,6 @@ p {
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
 }
 
 .landingHeader::before {
@@ -61,7 +68,6 @@ p {
   right: 0;
   position: absolute;
   z-index: -1;
-  height: 90vh;
 }
 
 .makeshiftLogo,
@@ -111,13 +117,82 @@ h2 {
 
 button {
   border-radius: 15px;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border: none;
   background-color: #3cc88f;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 button:hover {
   background-color: #25283a;
+}
+
+.aboutUsWrapper {
+  background-color: #e4e7eb;
+}
+
+.aboutFlex {
+  display: flex;
+}
+
+.missionStatement {
+  padding: 100px 50px;
+  width: 50%;
+}
+
+.missionStatement > h4 {
+  color: #3cc88f;
+}
+
+.missionStatement > h2, p {
+  color: #25283a;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.howToHelp {
+  padding: 100px 50px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.howToHelp > div {
+  background-color: white;
+  border-radius: 20px;
+  width: calc(50% - 80px);
+  margin: 20px;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.howToHelp > div > p {
+  margin: 0;
+  margin-top: 30px;
+}
+
+.howToHelp > div > i {
+  font-size: 50px;
+}
+
+.howToHelp > div:first-of-type > i {
+  color: #ff6b70;
+}
+
+.howToHelp > div:nth-of-type(2) > i {
+  color: #21d7d9;
+}
+
+.howToHelp > div:nth-of-type(3) > i {
+  color: #f7a900;
+}
+
+.howToHelp > div:nth-of-type(4) > i {
+  color: #3cc88f;
 }
